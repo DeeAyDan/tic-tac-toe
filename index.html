@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Tic-Tac-Toe</title>
+  <meta name="author" content="Daniel Kromek">
+  <meta name="description" content="Tic-tac-toe project from 'The odin Project'.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="title">
+    Tic-Tac-Toe
+  </div>
+  <div id="main">
+      <div id="player1-panel" class="active">
+        <div class="panel-element" id="player1-name" style="padding-top: 8.5px;">Player 1</div>
+        <button class="panel-element" id="player1-button">Change</button>
+        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+      </div>
+      <div id="reset-panel">
+        <button class="panel-element" id="reset-button">Reset</button>
+      </div>
+      <div id="table">
+        <div class="table-cell" id="cell1"></div>
+        <div class="table-cell" id="cell2"></div>
+        <div class="table-cell" id="cell3"></div>
+        <div class="table-cell" id="cell4"></div>
+        <div class="table-cell" id="cell5"></div>
+        <div class="table-cell" id="cell6"></div>
+        <div class="table-cell" id="cell7"></div>
+        <div class="table-cell" id="cell8"></div>
+        <div class="table-cell" id="cell9"></div>
+      </div>
+      <div id="player2-panel" class="inactive">
+        <button class="panel-element" id="player2-name">Player 2</button>
+        <button class="panel-element" id="player2-button">Change</button>
+        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+      </div>
+      <div id="ai-panel">
+        <button class="panel-element" id="ai-name">AI Dan</button>
+        <button class="panel-element" id="ai-button">Unbeatable</button>
+        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+      </div>
+      <div id="outcome-message">
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

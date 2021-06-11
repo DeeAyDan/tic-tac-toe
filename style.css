@@ -1,0 +1,103 @@
+body {
+    background-color: #03256c;}
+#title{
+    position: absolute;
+    font-family: Impact, Haettenschweiler, Franklin Gothic Bold, Charcoal, Helvetica Inserat, Bitstream Vera Sans Bold, Arial Black, sans serif;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: 68px;
+    color: #feddbe;
+    text-shadow: 3px 3px 3px #ffc947;
+    width: 297px;
+    height: 66px;
+    background-color: #0a1931;
+    letter-spacing: 7px;
+    text-align: center;
+    border: solid #ffc947;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px 5px;
+    left: calc(50% - 148px);
+    top: 3%;}
+.panel-element{
+    background-color: #0a1931;
+    width: 100px;
+    height: 33px;
+    border-color:#ffc947;
+    border-width: 0px;
+    color: #feddbe;
+    font-size: 16px;
+    text-align: center;}
+.panel-element2{
+    background-color: #0a1931;
+    width: 100px;
+    height: 50px;
+    border-color:#ffc947;
+    border-width: 0px;
+    color: #feddbe;
+    font-size: 16px;
+    text-align: center;}
+.panel-image{
+    width: 50px;
+    background-color: #0a1931;}
+#main{
+    position: absolute;
+    width: 515px;
+    height: 383px;
+    top: calc(50% - 190px);
+    left: calc(50% - 257px);}
+#player1-panel{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 0;
+    left: 0;}
+#reset-panel{
+    position: absolute;
+    width: 99px;
+    height: 33px;
+    top: 198px;
+    left: 0px;}
+#table{
+    position: absolute;
+    display: grid;
+    width: 297px;
+    height: 297px;
+    top: 0px;
+    left: 109px;
+    grid-template-columns: 99px 99px 99px;
+    grid-template-rows: 99px 99px 99px;} 
+.table-cell{
+    background-color: #0a1931;
+    width: 99px;
+    height: 99px;
+    border:solid #ffc947;}
+#player2-panel{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 0px;
+    right: 0px;}
+#ai-panel{
+    position: absolute;
+    width: 99px;
+    height: 99px;
+    top: 198px;
+    right: 0px;}
+#outcome-message{
+    position: absolute;
+    width: 297px;
+    height: 66px;
+    bottom: 0px;
+    left: 109px;
+    background-color: #0a1931;
+    border: solid #ffc947;
+    box-shadow: 0 0 10px 5px #0a1931;
+    border-radius: 50px;
+    border-width: 2px;
+    color: #feddbe;}
+.inactive{
+    border-width: 0px;
+    opacity: 30%;}
+.active{
+    border-width: 1px;}
