@@ -55,7 +55,7 @@ body {
 #reset-panel{
     position: absolute;
     width: 99px;
-    height: 33px;
+    height: 66px;
     top: 198px;
     left: 0px;}
 #table{
@@ -98,6 +98,6 @@ body {
     color: #feddbe;}
 .inactive{
     border-width: 0px;
-    opacity: 30%;}
+    opacity: 20%;}
 .active{
     border-width: 1px;}

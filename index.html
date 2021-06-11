@@ -18,11 +18,12 @@
   <div id="main">
       <div id="player1-panel" class="active">
         <div class="panel-element" id="player1-name" style="padding-top: 8.5px;">Player 1</div>
-        <button class="panel-element" id="player1-button">Change</button>
-        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+        <button class="panel-element" id="player1-button">Rename</button>
+        <div class="panel-element2"><img class="panel-image" id="player1-x" src="imgs/x.png"><img class="panel-image" id="player1-o" src="imgs/o.png"></div>
       </div>
       <div id="reset-panel">
         <button class="panel-element" id="reset-button">Reset</button>
+        <button class="panel-element" id="start-button">Start</button>
       </div>
       <div id="table">
         <div class="table-cell" id="cell1"></div>
@@ -35,15 +36,15 @@
         <div class="table-cell" id="cell8"></div>
         <div class="table-cell" id="cell9"></div>
       </div>
-      <div id="player2-panel" class="inactive">
+      <div id="player2-panel">
         <button class="panel-element" id="player2-name">Player 2</button>
-        <button class="panel-element" id="player2-button">Change</button>
-        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+        <button class="panel-element" id="player2-button">Rename</button>
+        <div class="panel-element2"><img class="panel-image" id="player2-x" src="imgs/x.png"><img class="panel-image" id="player2-o" src="imgs/o.png"></div>
       </div>
-      <div id="ai-panel">
+      <div id="ai-panel" class="inactive">
         <button class="panel-element" id="ai-name">AI Dan</button>
         <button class="panel-element" id="ai-button">Unbeatable</button>
-        <div class="panel-element2"><img class="panel-image" src="imgs/x.png"><img class="panel-image" src="imgs/o.png"></div>
+        <div class="panel-element2"><img class="panel-image" id="ai-x" src="imgs/x.png"><img class="panel-image" id="ai-o" src="imgs/o.png"></div>
       </div>
       <div id="outcome-message">
       </div>
