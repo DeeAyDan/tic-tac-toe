@@ -95,7 +95,8 @@ body {
     box-shadow: 0 0 10px 5px #0a1931;
     border-radius: 50px;
     border-width: 2px;
-    color: #feddbe;}
+    color: #feddbe;
+    text-align: center;}
 .inactive{
     border-width: 0px;
     opacity: 20%;}
