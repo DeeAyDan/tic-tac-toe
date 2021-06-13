@@ -26,6 +26,7 @@ let gameControl = (function(){
     let aiSign = '';
     let board = ['', '', '', '', '', '', '', '', ''];
     let player1Turn = true;
+    let roundsPlayer = 0;
 
     player1SelectX.addEventListener('click', playerX);
     player1SelectO.addEventListener('click', playerO);
@@ -194,6 +195,7 @@ let gameControl = (function(){
         }
     };
     function resetGame(){
+        roundsPlayer = 0;
         player1Panel.classList.add('active');
         outcomeMessage.textContent = `The game has been reset.`;
         table.classList.remove('active');
@@ -216,6 +218,7 @@ let gameControl = (function(){
 
     }
     function winCheck(){
+        roundsPlayer++;
         if (board[0] === player1Sign && board[1] === player1Sign && board[2] === player1Sign || board[3] === player1Sign && board[4] === player1Sign && board[5] === player1Sign || board[6] === player1Sign && board[7] === player1Sign && board[8] === player1Sign){
             outcomeMessage.textContent = `Game over. ${namePlayer1.textContent} won.`
             table.classList.remove('active');
@@ -243,6 +246,11 @@ let gameControl = (function(){
         }
         else if(board[0] === player2Sign && board[4] === player2Sign && board[8] === player2Sign || board[2] === player2Sign && board[4] === player2Sign && board[6] === player2Sign){
             outcomeMessage.textContent = `Game over. ${namePlayer2.textContent} won.`
+            table.classList.remove('active');
+            return
+        }
+        else if (roundsPlayer === 9){
+            outcomeMessage.textContent = `It's a tie.`
             table.classList.remove('active');
             return
         }
